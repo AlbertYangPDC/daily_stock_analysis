@@ -76,8 +76,8 @@ jobs:
           # 方式五：自定义 Webhook（支持钉钉、Discord、Slack、Bark等，多个用逗号分隔）
           CUSTOM_WEBHOOK_URLS: ${{ secrets.CUSTOM_WEBHOOK_URLS }}
           
-          # 自选股列表 (从 secrets 或使用默认值)
-          STOCK_LIST: ${{ secrets.STOCK_LIST || '600519' }}
+          # 自选股列表 (从 variables 或使用默认值)
+          STOCK_LIST: ${{ variables.STOCK_LIST || '600519' }}
           
           # 其他配置
           LOG_LEVEL: INFO
