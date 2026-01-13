@@ -77,7 +77,7 @@ jobs:
           CUSTOM_WEBHOOK_URLS: ${{ secrets.CUSTOM_WEBHOOK_URLS }}
           
           # 自选股列表 (从 variables 或使用默认值)
-          STOCK_LIST: ${{ variables.STOCK_LIST || '600519' }}
+          STOCK_LIST: ${{ vars.STOCK_LIST || '600519' }}
           
           # 其他配置
           LOG_LEVEL: INFO
